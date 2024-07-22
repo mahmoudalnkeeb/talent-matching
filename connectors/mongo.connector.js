@@ -9,6 +9,7 @@ const {
 module.exports = {
   connect: async () => {
     try {
+      // TODO: make this a utility function
       const DB = URI.replace('<DATABASE_USER>', DATABASE_USER)
         .replace('<PASSWORD>', DATABASE_PASSWORD)
         .replace('<DATABASE_NAME>', DATABASE_NAME);
